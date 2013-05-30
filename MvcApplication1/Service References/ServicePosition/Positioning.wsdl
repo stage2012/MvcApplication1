@@ -3,7 +3,7 @@
   <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
   <types>
     <xsd:schema>
-      <xsd:import schemaLocation="../OperationContracts/Operations.xsd" namespace="http://xmlns.scania.com/fleet/schema/positioning/v1" />
+      <xsd:import schemaLocation="./Operations.xsd" namespace="http://xmlns.scania.com/fleet/schema/positioning/v1" />
     </xsd:schema>
   </types>
   <message name="getFleetPositionIn">
