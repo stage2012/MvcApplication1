@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://xmlns.scania.com/fleet/schema/vehicleanalysis/v1" targetNamespace="http://xmlns.scania.com/fleet/schema/vehicleanalysis/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="BasicInformationType">
+    <xs:sequence>
+      <xs:element maxOccurs="1" name="VinNumber" nillable="true" type="xs:string" />
+      <xs:element maxOccurs="1" name="ChassisNumber" nillable="true" type="xs:string" />
+      <xs:element maxOccurs="1" name="RegistrationNumber" nillable="true" type="xs:string" />
+      <xs:element maxOccurs="1" name="VehicleAlias" nillable="true" type="xs:string" />
+      <xs:element maxOccurs="1" name="DriverAlias" nillable="true" type="xs:string" />
+      <xs:element maxOccurs="1" name="Odometer" nillable="true" type="xs:int" />
+      <xs:element maxOccurs="1" name="Ignition" nillable="true" type="xs:boolean" />
+      <xs:element maxOccurs="1" name="TimeMessage" nillable="true" type="xs:dateTime" />
+      <xs:element maxOccurs="1" name="FuelLevel" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

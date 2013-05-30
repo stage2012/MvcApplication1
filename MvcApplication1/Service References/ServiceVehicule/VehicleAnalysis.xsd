@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://xmlns.scania.com/fleet/schema/vehicleanalysis/v1" xmlns:common="http://xmlns.scania.com/fleet/schema/common/v1" targetNamespace="http://xmlns.scania.com/fleet/schema/vehicleanalysis/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="../DataContracts/FuelConsumption.xsd" />
+  <xs:include schemaLocation="../DataContracts/DriverBehavior.xsd" />
+  <xs:include schemaLocation="../DataContracts/BasicInformation.xsd" />
+  <xs:include schemaLocation="../DataContracts/Maintenance.xsd" />
+  <xs:complexType name="VehicleAnalysisType">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="BasicInformation" type="BasicInformationType" />
+      <xs:element minOccurs="1" maxOccurs="1" name="FuelConsumption" type="FuelConsumptionType" />
+      <xs:element minOccurs="1" maxOccurs="1" name="DriverBehaviour" type="DriverBehaviourType" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Maintenance" type="MaintenanceType" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
