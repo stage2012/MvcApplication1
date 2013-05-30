@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns="http://xmlns.scania.com/fleet/schema/positioning/v1" targetNamespace="http://xmlns.scania.com/fleet/schema/positioning/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:include schemaLocation="../MessageContracts/FleetPosition.xsd" />
-  <xs:include schemaLocation="../DataContracts/ErrorInfo.xsd" />
+  <xs:include schemaLocation="./FleetPosition.xsd" />
+  <xs:include schemaLocation="./ErrorInfo.xsd" />
   <xs:element name="FleetPositionResponse" nillable="true">
     <xs:annotation>
       <xs:documentation>
