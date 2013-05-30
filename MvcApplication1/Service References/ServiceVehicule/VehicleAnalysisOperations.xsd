@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns="http://xmlns.scania.com/fleet/schema/vehicleanalysis/v1" targetNamespace="http://xmlns.scania.com/fleet/schema/vehicleanalysis/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:include schemaLocation="./VehicleAnalysis.xsd" />
-  <xs:include schemaLocation="./ErrorInfo.xsd" />
+  <xs:include schemaLocation="../MessageContracts/VehicleAnalysis.xsd" />
+  <xs:include schemaLocation="../DataContracts/ErrorInfo.xsd" />
   <xs:element name="VehicleAnalysisResponse" nillable="true">
     <xs:complexType>
       <xs:sequence>

@@ -3,7 +3,7 @@
     Ce fichier JS est appelé "onload" (au chargement de la page) et appelle la fonction "Map" du contrôleur pour les "Services"
     "getJSON" récupère le retour de cette fonction (une chaine de caractères au format JSON) et le passe en paramètre à la fonction "initialise"
     ****************************************************************************************************************************************************/
-$(function () {$.getJSON("../Services/Map", initialise);});
+$(function () {$.getJSON("/Services/Map", initialise);});
 
     //fonction qui initialise la carte
     function initialise(carteJSON)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns="http://xmlns.scania.com/fleet/schema/positioning/v1" xmlns:common="http://xmlns.scania.com/fleet/schema/common/v1" targetNamespace="http://xmlns.scania.com/fleet/schema/positioning/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:include schemaLocation="./Position.xsd" />
+  <xs:include schemaLocation="../DataContracts/Position.xsd" />
   <xs:complexType name="FleetPosition">
     <xs:sequence minOccurs="0">
       <xs:element maxOccurs="1" name="VinNumber" nillable="true" type="xs:string" />
