@@ -46,7 +46,7 @@
         {
             position: latlng,
             map: myMap,
-            icon: myMarkerImage,
+            //icon: myMarkerImage,
             title: fleetPosition.VinNumber
         });
         // variable indiquant le contenu de la fenêtre à afficher lors d'un clique sur le marqueur
