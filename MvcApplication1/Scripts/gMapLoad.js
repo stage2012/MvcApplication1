@@ -38,7 +38,7 @@
     function setupLocationMarker(myMap, fleetPosition) 
     {
         //intialisation image du marqueur d'un véhicule
-        var myMarkerImage = new google.maps.MarkerImage('../Images/truck3.png');
+        var myMarkerImage = new google.maps.MarkerImage('./../Images/truck3.png');
         //position du marqueur
         var latlng = new google.maps.LatLng(fleetPosition.position.Latitude, fleetPosition.position.Longitude);
         //création du marqueur
