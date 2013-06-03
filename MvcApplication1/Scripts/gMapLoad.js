@@ -4,7 +4,7 @@
     "getJSON" récupère le retour de cette fonction (une chaine de caractères au format JSON) et le passe en paramètre à la fonction "initialise"
     ****************************************************************************************************************************************************/
     window.onload = (function () {$.getJSON("/Services/Map", initialise);});
-    
+    //
     //fonction qui initialise la carte
     function initialise(carteJSON)
     {
