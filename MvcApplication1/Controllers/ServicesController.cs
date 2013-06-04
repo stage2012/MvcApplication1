@@ -44,11 +44,15 @@ namespace MvcApplication1.Controllers
             carteVehicules.Zoom = 6;
             //création de la liste d'éléments de la classe FleetPosition
             List<ServicePosition.FleetPosition> listePosition = new List<ServicePosition.FleetPosition>();
-            for (int i = 0; i < response.Length; i++)
+            if(response.Length>0)
             {
-                listePosition.Add(response[i]);
-              
+                for (int i = 0; i < response.Length; i++)
+                {
+                    listePosition.Add(response[i]);
+                  
+                }
             }
+            
             carteVehicules.Locations = listePosition;
 
             return Json(carteVehicules, JsonRequestBehavior.AllowGet);
