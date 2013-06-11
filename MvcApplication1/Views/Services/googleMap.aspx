@@ -6,8 +6,9 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h2 id="mapName"></h2>
+    Appuyer sur "F5" pour recharger la carte
     <p id="test"></p>
-    <!-- voir pourqoi donner une taille à la carte en dur et auto marche pas  -->
+    <!-- voir taille carte -->
     <div id="carteVehicules" style="width:900; height:768px;">
         <p>Veuillez patienter pendant le chargement de la carte...</p>
     </div>

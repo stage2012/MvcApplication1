@@ -76,6 +76,7 @@ namespace MvcApplication1.Controllers
         public ActionResult LogOff()
         {
             FormsService.SignOut();
+            Session.RemoveAll();
             return RedirectToAction("Index", "Home");
         }
 

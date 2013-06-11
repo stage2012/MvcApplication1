@@ -17,19 +17,23 @@ namespace MvcApplication1.Controllers
         //
         public ActionResult Index()
         {
-            return View();
+            if (Request.IsAuthenticated)
+                return View();
+            else return RedirectToAction("LogOn","Account");
         }
 
         public ActionResult WebServices()
         {
-            
+            if (Request.IsAuthenticated)
             return View();
+            else return RedirectToAction("LogOn", "Account");
         }
 
         public ActionResult googleMap()
         {
-            
+            if (Request.IsAuthenticated)
             return View();
+            else return RedirectToAction("LogOn", "Account");
         }
 
         public ActionResult Map()
@@ -44,17 +48,18 @@ namespace MvcApplication1.Controllers
             carteVehicules.Zoom = 6;
             //création de la liste d'éléments de la classe FleetPosition
             List<ServicePosition.FleetPosition> listePosition = new List<ServicePosition.FleetPosition>();
-            if(response.Length>0)
+            try
             {
                 for (int i = 0; i < response.Length; i++)
                 {
                     listePosition.Add(response[i]);
-                  
                 }
             }
-            
+            catch
+            {
+                
+            }
             carteVehicules.Locations = listePosition;
-
             return Json(carteVehicules, JsonRequestBehavior.AllowGet);
 
         }
@@ -66,10 +71,18 @@ namespace MvcApplication1.Controllers
 
             //récupération de liste des VinNumbers
             var liste = new List<SelectListItem>();
-            for (int i = 0; i < response.Length; i++)
+            try
             {
-                liste.Add(new SelectListItem { Text = response[i].BasicInformation.VinNumber, Value = i.ToString() });
+                for (int i = 0; i < response.Length; i++)
+                {
+                    liste.Add(new SelectListItem { Text = response[i].BasicInformation.VinNumber, Value = i.ToString() });
+                }
             }
+            catch
+            {
+                liste.Add(new SelectListItem { Text = "--aucun véhicule abonné--", Value = "0" });
+            }
+
             //création du modèle
             var model = new InformationsModels
             {
@@ -89,20 +102,34 @@ namespace MvcApplication1.Controllers
 
         public ActionResult Informations()
         {
+            if (Request.IsAuthenticated)
             //envoi à la vue du modèle
-            return View(getModel());  
+            return View(getModel());
+            else return RedirectToAction("LogOn", "Account");
         }
 
         [HttpPost]
         public ActionResult Informations(InformationsModels model)
         {
-            //récupère les données
-            ServiceVehicule.VehicleAnalysisType[] response = (ServiceVehicule.VehicleAnalysisType[])Session["Analyse"];
-            InformationsModels newModel = getModel(); 
-            newModel.SelectedVinNumber = model.SelectedVinNumber;
-            newModel.SelectedTypeInfo = model.SelectedTypeInfo;
-            newModel.InfosExperts = response[Convert.ToInt32(model.SelectedVinNumber)];
-            return View(newModel);
+            if (Request.IsAuthenticated)
+            {
+                //récupère les données
+                ServiceVehicule.VehicleAnalysisType[] response = (ServiceVehicule.VehicleAnalysisType[])Session["Analyse"];
+                try
+                {
+                    InformationsModels newModel = getModel();
+                    newModel.SelectedVinNumber = model.SelectedVinNumber;
+                    newModel.SelectedTypeInfo = model.SelectedTypeInfo;
+                    newModel.InfosExperts = response[Convert.ToInt32(model.SelectedVinNumber)];
+                    return View(newModel);
+                }
+                catch
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+            else return RedirectToAction("LogOn", "Account");
+            
         }
 
     }   

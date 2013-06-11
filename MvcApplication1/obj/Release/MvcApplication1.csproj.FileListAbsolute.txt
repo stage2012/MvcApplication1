@@ -1,8 +1,5 @@
 C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\MvcApplication1.dll
 C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\MvcApplication1.pdb
-C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Release\ResolveAssemblyReference.cache
-C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Release\MvcApplication1.dll
-C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Release\MvcApplication1.pdb
 C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\Microsoft.CSharp.dll
 C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\System.ComponentModel.DataAnnotations.dll
 C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\System.Configuration.dll
@@ -25,3 +22,6 @@ C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplica
 C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\System.Xml.dll
 C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\System.Xml.Linq.dll
 C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\System.Web.Mvc.xml
+C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Release\MvcApplication1.dll
+C:\Users\srannw\Documents\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Release\MvcApplication1.pdb

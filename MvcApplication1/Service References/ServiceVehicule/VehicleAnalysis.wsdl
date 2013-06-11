@@ -7,7 +7,7 @@
   </wsdl:documentation>
   <types>
     <xsd:schema>
-      <xsd:import schemaLocation="../OperationContracts/VehicleAnalysisOperations.xsd" namespace="http://xmlns.scania.com/fleet/schema/vehicleanalysis/v1" />
+      <xsd:import schemaLocation="./VehicleAnalysisOperations.xsd" namespace="http://xmlns.scania.com/fleet/schema/vehicleanalysis/v1" />
     </xsd:schema>
   </types>
   <message name="getVehicleAnalysisIn">

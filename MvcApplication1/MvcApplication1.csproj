@@ -151,11 +151,17 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Images\gryffon.png" />
+    <Content Include="Images\gryffon_or.png" />
+    <Content Include="Images\truck.png" />
+    <Content Include="Images\truck2.png" />
+    <Content Include="Images\truck3.png" />
     <Content Include="Scripts\gMapLoad.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\js.js" />
+    <Content Include="Views\Services\abonnement.aspx" />
     <Content Include="Views\Services\googleMap.aspx" />
     <Content Include="Views\Services\Index.aspx" />
     <Content Include="Views\Services\Informations.aspx" />
@@ -210,7 +216,9 @@
     <None Include="Service References\ServiceVehicule\Maintenance.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceVehicule\VehicleAnalysis.wsdl" />
+    <None Include="Service References\ServiceVehicule\VehicleAnalysis.wsdl">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\ServiceVehicule\VehicleAnalysis.xsd">
       <SubType>Designer</SubType>
     </None>
